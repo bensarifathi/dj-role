@@ -1,0 +1,6 @@
+class {{class_name}}(AbstractUserRole):
+    available_permissions = {
+        {% for perm in permission_list %}
+        {{perm}}: True,
+        {% endfor %}
+    }
